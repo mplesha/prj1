@@ -13,6 +13,11 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb/types"
 )
 
+const (
+	tableName   = "Students"
+	partitionID = "students"
+)
+
 type StudentsStore interface {
 	PutStudent(student *models.Student) error
 	QueryStudents() ([]models.Student, error)
