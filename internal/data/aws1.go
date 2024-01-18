@@ -1,3 +1,5 @@
+// Logging: Printfm vs log 
+
 package data
 
 import (
